@@ -126,12 +126,21 @@ p {
   #container {
     width: 100%;
     height: 100%;
-    grid-template-columns: auto;
+    grid-template-columns: 100%;
     box-shadow: none;
   }
 
   body {
     background-image: none;
+    overflow: scroll;
+  }
+
+  input {
+    padding-bottom: 15px;
+  }
+
+  #inputs {
+    padding-bottom: 50px;
   }
 
   img {
