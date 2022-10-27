@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Time Form</title>
+    <link rel="icon" href="./media/favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <img src="./media/form_image.png" />
+      <div id="form">
+        <div id="intro">
+          <h1>Welcome to Crowdrise</h1>
+          <p id="intro">
+            Let's get you all set up so you can verify your nonprofit and begin
+            setting up your first campaign!
+          </p>
+          <p id="login">Already have an account? <a href="#">Log in</a></p>
+          <p id="success"></p>
+        </div>
+        <form autocomplete="off">
+          <div id="inputs">
+            <!-- <label for="firstName">First Name</label> -->
+            <input
+              id="firstName"
+              type="text"
+              name="firstName"
+              placeholder="First Name"
+              required
+            />
+
+            <!-- <label for="lastName">Last Name</label> -->
+            <input
+              id="lastName"
+              type="text"
+              name="lastName"
+              placeholder="Last Name"
+              required
+            />
+
+            <!-- <label for="phone">Phone</label> -->
+            <input id="phone" type="text" name="phone" placeholder="Phone" />
+
+            <!-- <label for="email">Email</label> -->
+            <input
+              id="email"
+              type="text"
+              name="email"
+              placeholder="Email"
+              required
+            />
+
+            <!-- <label for="password">Password</label> -->
+            <input
+              id="password"
+              type="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+            <!-- <label for="confirmPassword">Confirm password</label> -->
+            <input
+              id="confirmPassword"
+              type="password"
+              name="confirmPassword"
+              placeholder="Confirm Password"
+              required
+            />
+          </div>
+
+          <div class="checkbox">
+            <input id="receiveEmails" type="checkbox" name="receiveEmails" />
+            <label for="receiveEmails"
+              >Yes, I want to receive Crowdrise's emails</label
+            >
+          </div>
+          <br />
+
+          <div class="checkbox">
+            <input id="agreement" type="checkbox" name="agreement" required/>
+            <label
+              >I agree to the <a href="#">Terms</a>,
+              <a href="#">Privacid Policy</a> and <a href="#">Fees</a></label
+            >
+          </div>
+          <br />
+
+          <input id="submit" type="submit" value="Sign up" />
+
+          <p>
+            Don't work for a nonprofit?
+            <a href="#">You can still fundraise for one</a>.
+          </p>
+        </form>
+      </div>
+    </div>
+    <script src="stylish_form.js"></script>
+  </body>
+</html>

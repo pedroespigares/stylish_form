@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  color: #7e868d;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: linear-gradient(to right, #af75ed, #4f52d8);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+#container {
+  background-color: #fff;
+  width: 50%;
+  height: 78%;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  line-height: 1.5;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.185);
+}
+
+#form {
+  margin-top: 35%;
+  height: 100%;
+}
+
+form,
+#intro {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#inputs {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 15px;
+  padding-bottom: 20px;
+}
+
+p#intro {
+  font-size: 13px;
+  margin-bottom: 50px;
+  padding-left: 0px;
+}
+
+p#login {
+  font-size: 13px;
+  padding-left: 0px;
+}
+
+#success {
+  font-size: 16px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+input {
+  padding: 10px;
+}
+
+input:focus {
+  outline: 2px #0a9be5 solid;
+  border: none;
+}
+
+.checkbox {
+  margin-bottom: 0px;
+  font-size: 0.7em;
+}
+
+input[type="submit"] {
+  background-color: #0a9be5;
+  color: white;
+  border-radius: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 1px white solid;
+  margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+  background-color: white;
+  color: #0a9be5;
+  border-radius: 5px;
+  border: 1px #0a9be5 solid;
+  transition: 0.2s;
+}
+
+a {
+  text-decoration: none;
+  color: #0a9be5;
+  font-weight: bold;
+}
+
+a:hover {
+  opacity: 50%;
+  transition: 0.2s;
+}
+
+p {
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 736px) {
+  *{
+    margin: 0;
+  }
+  
+  #container {
+    width: 100%;
+    height: 100%;
+    grid-template-columns: auto;
+    box-shadow: none;
+  }
+
+  body {
+    background-image: none;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
