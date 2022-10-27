@@ -58,7 +58,11 @@ form.addEventListener("submit", (e) => {
     passwordResult &&
     password == confirmPassword
   ) {
-    container.style.height = "82.5%";
+    if((window.matchMedia("(min-width: 1080px)").matches)){
+      container.style.height = "82.5%";
+    } else{
+      container.style.height = "100%";
+    }
     success.style.backgroundColor = "#d2ffd2";
     success.style.color = "green";
     success.style.padding = "10px";
